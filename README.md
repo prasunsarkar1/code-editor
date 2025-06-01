@@ -1,18 +1,33 @@
-# React + Vite
-$ git push -u origin master
-Enumerating objects: 17, done.
-Counting objects: 100% (17/17), done.
-Delta compression using up to 12 threads
-Compressing objects: 100% (15/15), done.
-Writing objects: 100% (17/17), 42.12 KiB | 3.83 MiB/s, done.
-Total 17 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: 
-remote: Create a pull request for 'master' on GitHub by visiting:      
-remote:      https://github.com/prasunsarkar1/code-editor/pull/new/master
-remote:
-To https://github.com/prasunsarkar1/code-editor.git
- * [new branch]      master -> master
-branch 'master' set up to track 'origin/master'.
+# Realtime Code Editor
+
+A responsive, realtime collaborative code editor built with React.  
+Supports multiple languages, live code editing, and easy room sharing.
+
+## Features
+
+- Realtime collaborative editing
+- Multiple programming languages support
+- Room-based sessions with copyable room IDs
+- Clean and classy UI design
+
+## Tech Stack
+
+- React.js (Frontend)
+- Node.js / Express (Backend, if applicable)
+- WebSocket / Socket.io for realtime communication
+- Monaco Editor for code editing
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed on your system
+
+### Installation
+
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/prasunsarkar1/code-editor.git
 Navigate to the project folder
 
 bash
