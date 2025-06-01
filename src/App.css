@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0f2027;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: #f4f4f4;
+}
+
+.join-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .join-form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 320px;
+    text-align: center;
+    color: white;
+
+    h1 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background: #1f8ef1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: #0d6efd;
+      }
+    }
+  }
+}
+
+.editor-container {
+  display: flex;
+  height: 100vh;
+
+  .sidebar {
+    width: 260px;
+    padding: 2rem 1rem;
+    background: #1e1e2f;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .room-info {
+      text-align: center;
+
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+      }
+
+      .copy-button {
+        padding: 0.5rem 1rem;
+        background: #00adb5;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          background: #007b7f;
+        }
+      }
+
+      .copy-success {
+        margin-top: 0.5rem;
+        color: #4caf50;
+        font-size: 0.85rem;
+      }
+    }
+
+    h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        margin-top: 5px;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        color: #f1f1f1;
+      }
+    }
+
+    .typing-indicator {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      color: #aaa;
+    }
+
+    .language-selector {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      background: #2d2d44;
+      color: white;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .leave-button {
+      width: 100%;
+      padding: 0.75rem;
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: #c4303a;
+      }
+    }
+  }
+
+  .editor-wrapper {
+    flex: 1;
+    background: #282c34;
+    overflow: hidden;
+  }
+}
