@@ -28,26 +28,25 @@ Supports multiple languages, live code editing, and easy room sharing.
 1. Clone the repo  
    ```bash
    git clone https://github.com/prasunsarkar1/code-editor.git
-Navigate to the project folder
+   ```
+2.Navigate to the project folder
 
-bash
-Copy
-Edit
+```
 cd code-editor/frontend
-Install dependencies
+```
+3.Install dependencies
 
-bash
-Copy
-Edit
+```
 npm install
-Start the development server
-
-bash
-Copy
-Edit
+```
+4.Start the development server
+```
 npm start
-Open your browser at http://localhost:3000
-
+```
+5.Open your browser at
+```
+http://localhost:3000
+```
 Usage
 Create or join a room using a room ID.
 
