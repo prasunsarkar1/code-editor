@@ -8,7 +8,7 @@ const app = express();
 
 const server = http.createServer(app);
 
-const url = `https://realtime-code-editor-final.onrender.com`;
+const url = `https://code-editor-veh8.onrender.com`;
 const interval = 30000;
 
 function reloadWebsite() {
@@ -117,11 +117,11 @@ const port = process.env.PORT || 5000;
 
 const __dirname = path.resolve();
 
-app.use(express.static(path.join(__dirname, "/frontend/dist")));
+// app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+// });
 
 server.listen(port, () => {
   console.log("server is working on port 5000");
