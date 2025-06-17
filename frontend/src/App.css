@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.join-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+  .join-form {
+    background-color: #1f2937;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    width: 320px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 1.5rem;
+      color: #a5b4fc;
+      font-weight: 700;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.85rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #374151;
+      color: #f9fafb;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      background-color: #4b5563;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.85rem;
+      background-color: #6366f1;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #4f46e5;
+    }
+  }
+}
+
+.editor-container {
+  display: flex;
+  height: 100vh;
+
+  .sidebar {
+    width: 280px;
+    padding: 2rem 1.5rem;
+    background-color: #1f2937;
+    color: #d1d5db;
+    display: flex;
+    flex-direction: column;
+
+    .room-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 1.3rem;
+        color: #a5b4fc;
+        margin-bottom: 0.75rem;
+      }
+
+      .copy-button {
+        padding: 0.6rem 1.2rem;
+        background-color: #818cf8;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+
+      .copy-button:hover {
+        background-color: #6366f1;
+      }
+
+      .copy-success {
+        margin-top: 0.5rem;
+        color: #22c55e;
+        font-size: 0.85rem;
+      }
+    }
+
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: 0.7rem;
+      font-size: 1.1rem;
+      color: #c7d2fe;
+    }
+
+    ul {
+      list-style: none;
+      overflow-y: auto;
+      max-height: 40vh;
+
+      li {
+        background: #374151;
+        padding: 0.6rem 1rem;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+
+      li:hover {
+        background-color: #4b5563;
+      }
+    }
+
+    .typing-indicator {
+      margin-top: auto;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      font-style: italic;
+      padding-top: 1rem;
+    }
+
+    .language-selector {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 0.7rem;
+      background-color: #374151;
+      color: #e0e0e0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .leave-button {
+      margin-top: 2rem;
+      padding: 0.9rem;
+      background-color: #ef4444;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+
+    .leave-button:hover {
+      background-color: #b91c1c;
+    }
+  }
+
+  .editor-wrapper {
+    flex-grow: 1;
+    background-color: #111827;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+}
+
+.run-btn {
+  background-color: #22c55e;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.run-btn:hover {
+  background-color: #16a34a;
+}
+
+.output-console {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  font-size: 18px;
+  height: 220px;
+  background-color: #1e293b;
+  color: #f3f4f6;
+  border-radius: 8px;
+  overflow-y: auto;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
